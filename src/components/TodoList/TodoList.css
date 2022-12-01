@@ -1,0 +1,77 @@
+.task { /*task div style*/
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    width: 900px;
+    height: 80px;
+    border: 4px solid #2a2a2a;
+    border-radius: 8px;
+    padding:20px;
+    margin-bottom: 20px;
+    transition: background-color 0.7s;
+}
+
+.undone { /*Color for undone tasks*/
+    background-color: #c4a26a;
+}
+
+.done {/*Color for done tasks*/
+    background-color: #0838af;
+}
+
+.delete-button { /*Delete button style*/
+    width: 100px;
+    height: 70px;
+    background-color: #ff0000;
+    color:white;
+    border:3px solid #282828;
+    border-radius: 5px;
+    font-size:30px;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover { /*Hovering Delete Button*/
+    background-color: #b90000;
+}
+
+.task-input-box { /*Adding task inputs style*/
+    padding:10px 100px;
+    border-top: 3px solid gray;
+}
+
+.add-text-input { /*Text input style*/
+    width:500px;
+    height: 70px;
+    padding: 7px;
+    margin: 10px;
+    font-size:40px;
+    border:3px solid #d5d5d5;
+    border-radius: 3px;
+    transition: border 0.2s, color 0.5s;
+    color: #798086;
+}
+
+.add-text-input:focus { /*Text input focusing style*/
+    color:black;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.add-button { /*Add button style*/
+    width: 100px;
+    height: 70px;
+    background-color: #ecdada;
+    color: #000000;
+    border:3px solid #282828;
+    border-radius: 15px;
+    font-size:30px;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover { /*Hovering Add button style*/
+    background-color: #a69696;
+}
