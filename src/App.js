@@ -1,18 +1,18 @@
 import React from "react";
 import './App.css';
 import TodoList from "./components/TodoList";
+import useTodos from "./hooks/useTodos/useTodos.js"
+import AddForm from "./components/AddForm";
 
-class App extends React.Component {
-
-
-  render(){
-      return (
+function App () {
+    const {taskList, addTodo, deleteTodo, toggleTodo} = useTodos()
+    return (
         <>
             <h1>Todo List</h1>
-            <TodoList/> {/*Todo List component*/}
+            <TodoList taskList={taskList} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+            <AddForm addTodo={addTodo}/>
         </>
-     )
-  }
+    )
 }
 
-export default App;
+export default App
