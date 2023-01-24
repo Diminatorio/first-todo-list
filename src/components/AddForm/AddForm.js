@@ -12,7 +12,7 @@ function AddForm({addTodo}) {
     const onAddTodo = (ev) => {
         ev.preventDefault()
         if (todo.title !== '') {
-            addTodo(todo)
+            addTodo(todo.title)
             setTodo({title:''})
         }
 

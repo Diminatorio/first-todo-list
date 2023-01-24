@@ -1,15 +1,16 @@
 import React from "react";
 import './App.css';
 import TodoList from "./components/TodoList";
-import useTodos from "./hooks/useTodos/useTodos.js"
 import AddForm from "./components/AddForm";
+import useReduxTodos from "./hooks/useReduxTodos/useReduxTodos";
 
 function App () {
-    const {taskList, addTodo, deleteTodo, toggleTodo} = useTodos()
+    const {todos, addTodo, deleteTodo, toggleTodo} = useReduxTodos()
+
     return (
         <>
             <h1>Todo List</h1>
-            <TodoList taskList={taskList} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+            <TodoList taskList={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
             <AddForm addTodo={addTodo}/>
         </>
     )
