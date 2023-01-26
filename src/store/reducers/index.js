@@ -12,8 +12,6 @@ export default function rootReducer(state= initialState, action) {
             return {...state, todos: state.todos.filter(todo => todo.id !== action.id)}
         case (ACTION_TOGGLE):
             return {...state, todos: state.todos.map(todo => todo.id !== action.id ? todo : {...todo, isDone: !todo.isDone})}
-        case (ACTION_SET):
-            return {...state, todos: action.todoList}
         default:
             return state
     }
