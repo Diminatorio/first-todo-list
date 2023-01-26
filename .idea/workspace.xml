@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403cbf46-b265-421d-8930-a4e9d8f59e91" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/toolkitStore/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toolkitStore/toolkitReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +79,7 @@
       <workItem from="1674467803878" duration="4803000" />
       <workItem from="1674500301232" duration="1709000" />
       <workItem from="1674549487570" duration="7455000" />
+      <workItem from="1674726003687" duration="1229000" />
     </task>
     <servers />
   </component>
