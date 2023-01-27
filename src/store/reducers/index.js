@@ -1,4 +1,4 @@
-import {ACTION_ADD, ACTION_DELETE, ACTION_TOGGLE, ACTION_SET} from "../actions/methods.js";
+import {ACTION_ADD, ACTION_DELETE, ACTION_TOGGLE} from "../actions/methods.js";
 
 const initialState = localStorage.getItem('todos') ?
     JSON.parse(localStorage.getItem('todos')):
@@ -12,8 +12,6 @@ export default function rootReducer(state= initialState, action) {
             return {...state, todos: state.todos.filter(todo => todo.id !== action.id)}
         case (ACTION_TOGGLE):
             return {...state, todos: state.todos.map(todo => todo.id !== action.id ? todo : {...todo, isDone: !todo.isDone})}
-        case (ACTION_SET):
-            return {...state, todos: action.todoList}
         default:
             return state
     }

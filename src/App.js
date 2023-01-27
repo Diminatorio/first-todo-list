@@ -2,10 +2,10 @@ import React from "react";
 import './App.css';
 import TodoList from "./components/TodoList";
 import AddForm from "./components/AddForm";
-import useReduxTodos from "./hooks/useReduxTodos/useReduxTodos";
+import useToolkitTodos from "./hooks/useToolkitReducer/useToolkitReducer";
 
 function App () {
-    const {todos, addTodo, deleteTodo, toggleTodo} = useReduxTodos()
+    const {todos, addTodo, deleteTodo, toggleTodo} = useToolkitTodos()
 
     return (
         <>
